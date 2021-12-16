@@ -7,8 +7,8 @@
 #include <algorithm>
 #include <sys/stat.h>
 #define IMGUI_DEFINE_MATH_OPERATORS
-#include <imgui/imgui.h>
-#include <imgui/imgui_internal.h>
+#include <imgui.h>
+#include <imgui_internal.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -18,6 +18,8 @@
 #include <shellapi.h>
 #include <lmcons.h>
 #pragma comment(lib, "Shell32.lib")
+#undef min
+#undef max
 #else
 #include <unistd.h>
 #include <pwd.h>
